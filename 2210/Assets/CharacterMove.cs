@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMove : MonoBehaviour {
+public class CharacterMove : MonoBehaviour
+{
 
+	private CharacterController controller;
+	
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
+		controller = GetComponent<CharacterController>();
 		
 	}
 	
